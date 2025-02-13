@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+
+#root {
+  min-height: 100dvh;
+}
+
+body {
+  color: theme('colors.text');
+  background: linear-gradient(132.15deg, theme('colors.gray.600') 0%, theme('colors.gray.800') 95.96%);
+}
+
+.has-gradient::after {
+  content: "";
+  position: absolute;
+  height: 60%;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: -1;
+  background: linear-gradient(132.15deg, theme('colors.gray.900') 0%, theme('colors.primary.800') 95.96%);
+}
+
+.search-list {
+  max-height: 155px;
+  overflow: auto;
+}
+
+@layer base {
+  * {
+    @apply text-left;
+  }
+
+  input {
+    @apply bg-gray-700 text-gray-100 w-full h-input text-left font-semibold text-sm rounded pl-3 pr-4 py-2;
+
+    &:focus {
+      @apply focus:ring-1 focus:ring-primary;
+    }
+  }
+}
