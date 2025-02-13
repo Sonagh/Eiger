@@ -36,7 +36,6 @@ const Search = () => {
         <input type="text"
                placeholder="Search for help"
                value={query}
-               className="focus:ring-1 focus:ring-primary"
                onChange={handleSearch}
         />
       </div>

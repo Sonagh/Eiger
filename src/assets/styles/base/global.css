@@ -31,10 +31,6 @@ body {
   }
 
   input {
-    @apply bg-gray-700 text-gray-100 w-full h-input text-left font-semibold text-sm rounded pl-3 pr-4 py-2;
-
-    &:focus {
-      @apply focus:ring-1 focus:ring-primary;
-    }
+    @apply bg-gray-700 text-gray-100 w-full h-input text-left font-semibold text-sm rounded focus:ring-1 focus:ring-primary outline-none pl-3 pr-4 py-2;
   }
 }
